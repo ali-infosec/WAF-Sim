@@ -19,7 +19,7 @@ This project demonstrates how to set up a local Web Application Firewall using M
 
 ### Step 1: Install Apache & ModSecurity
 
-sudo apt install apache2 libapache2-mod-security2 -y 
+```sudo apt install apache2 libapache2-mod-security2 -y```
 
 ![first step](docs/screenshots/first%20step.png)
 
@@ -27,7 +27,7 @@ sudo apt install apache2 libapache2-mod-security2 -y
 
 ### Step 2: Enable ModSecurity and Verify
 
-sudo a2enmod security2
+```sudo a2enmod security2```
 
 Then edit /etc/modsecurity/modsecurity.conf and turn SecRuleEngine on
 
@@ -44,7 +44,7 @@ Edit /etc/apache2/mods-enabled/security2.conf to include OWASP CRS rules
 
 ### Step 4: Scan for errors
 
-sudo apachectl configtest
+```sudo apachectl configtest```
 
 If you receive errors like duplicate rule id, you may get a lot of them, go through each one and comment the lines where you get them
 
@@ -52,12 +52,12 @@ If you receive errors like duplicate rule id, you may get a lot of them, go thro
 
 ### Step 5: Set Up DVWA
 
-cd /var/www/html
+```cd /var/www/html
 sudo git clone https://github.com/digininja/DVWA.git
 cd DVWA
 sudo cp config/config.inc.php.dist config/config.inc.php
-
-Configure DVWA settings to needs
+```
+Configure DVWA settings to requirements
 
 ![SS3](docs/screenshots/3.png)
 
@@ -65,7 +65,7 @@ Configure DVWA settings to needs
 
 ### Step 6: Start Apache and Access DVWA
 
-sudo systemctl restart apache2
+```sudo systemctl restart apache2```
 
 Go to http://127.0.0.1/DVWA and log in.
 
