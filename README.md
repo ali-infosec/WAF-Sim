@@ -21,7 +21,7 @@ This project demonstrates how to set up a local Web Application Firewall using M
 
 sudo apt install apache2 libapache2-mod-security2 -y 
 
-first step screenshot
+![first step](docs/screenshots/first%20step.png)
 
 ---
 
@@ -31,7 +31,7 @@ sudo a2enmod security2
 
 Then edit /etc/modsecurity/modsecurity.conf and turn SecRuleEngine on
 
-insert screenshot 1 here
+![SS1](docs/screenshots/1.png)
 
 ---
 
@@ -40,7 +40,7 @@ insert screenshot 1 here
 Edit /etc/apache2/mods-enabled/security2.conf to include OWASP CRS rules
 "Include optional lines are included OWASP CRS rules"
 
-screenshot 2
+![SS2](docs/screenshots/2.png)
 
 ### Step 4: Scan for errors
 
@@ -59,7 +59,7 @@ sudo cp config/config.inc.php.dist config/config.inc.php
 
 Configure DVWA settings to needs
 
-screenshot 3
+![SS3](docs/screenshots/3.png)
 
 ---
 
@@ -69,13 +69,14 @@ sudo systemctl restart apache2
 
 Go to http://127.0.0.1/DVWA and log in.
 
-screenshot 4
+![SS4](docs/screenshots/4.png)
 
 ---
 
 ### Step 7: Create Database and Adjust Security Level
 
-Screenshot 5 and 6
+![SS5](docs/screenshots/5.png)
+![SS6](docs/screenshots/6.png)
 
 ---
 
@@ -83,14 +84,18 @@ Screenshot 5 and 6
 
 Running XSS, SQLI, and Command Injection attacks on DVWA
 
-screenshot 7,8, and 9
+![SS7](docs/screenshots/7.png)
+![SS8](docs/screenshots/8.png)
+![SS9](docs/screenshots/9.png)
 
 ---
 #Step 9: Check Modsecurity Logs For Alerts
 
 Modsecurity successfully detected malicious traffic into DVWA, WAF working as intended
 
-screenshot 10,11,12
+![SS10](docs/screenshots/10.png)
+![SS11](docs/screenshots/11.png)
+![SS12](docs/screenshots/12.png)
 
 ---
 
