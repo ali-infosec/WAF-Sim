@@ -95,8 +95,10 @@ Modsecurity successfully detected malicious traffic into DVWA, WAF working as in
 
 Modsecurity detects Command Injection being inputed
 ![SS10](docs/screenshots/10.png)
+
 Modsecurity detects XSS being inputed
 ![SS11](docs/screenshots/11.png)
+
 Modsecurity detects SQLI being inputed
 ![SS12](docs/screenshots/12.png)
 
