@@ -38,7 +38,7 @@ Then edit /etc/modsecurity/modsecurity.conf and turn SecRuleEngine on
 ### Step 3: Link OWASP CRS
 
 Edit /etc/apache2/mods-enabled/security2.conf to include OWASP CRS rules
-"Include optional lines are included OWASP CRS rules"
+(Include optional lines are included OWASP CRS rules)
 
 ![SS2](docs/screenshots/2.png)
 
